@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jose_G_SaveMyData" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHf-9e-c3c">
+                                <rect key="frame" x="175" y="44" width="34" height="30"/>
+                                <state key="normal" title="Load"/>
+                                <connections>
+                                    <action selector="myLoadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tUC-z2-1XS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMm-El-5Oj">
+                                <rect key="frame" x="21" y="44" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="myDeleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IKT-Dg-pn9"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="d5A-hJ-jYJ">
+                                <rect key="frame" x="148" y="538" width="118" height="31"/>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nN7-a4-893">
+                                <rect key="frame" x="175" y="652" width="51" height="31"/>
+                            </switch>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hDX-gv-uHO">
+                                <rect key="frame" x="20" y="465" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxX-Ue-Cws">
+                                <rect key="frame" x="360" y="44" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="mySaveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="azP-yn-m2S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fxX-Ue-Cws" firstAttribute="leading" secondItem="hHf-9e-c3c" secondAttribute="trailing" constant="151" id="43c-JD-fHa"/>
+                            <constraint firstItem="d5A-hJ-jYJ" firstAttribute="top" secondItem="hDX-gv-uHO" secondAttribute="bottom" constant="39" id="48Z-ZQ-eni"/>
+                            <constraint firstItem="hDX-gv-uHO" firstAttribute="top" secondItem="hHf-9e-c3c" secondAttribute="bottom" constant="391" id="5HJ-YK-kj4"/>
+                            <constraint firstItem="nMm-El-5Oj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5qY-aQ-yQq"/>
+                            <constraint firstItem="nMm-El-5Oj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="AJJ-HF-7qZ"/>
+                            <constraint firstItem="d5A-hJ-jYJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="AyQ-X4-GyZ"/>
+                            <constraint firstItem="hHf-9e-c3c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BeC-Dv-3AZ"/>
+                            <constraint firstItem="hDX-gv-uHO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FWN-al-fTh"/>
+                            <constraint firstItem="fxX-Ue-Cws" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="360" id="Fq1-d3-QTa"/>
+                            <constraint firstItem="hDX-gv-uHO" firstAttribute="top" secondItem="nMm-El-5Oj" secondAttribute="bottom" constant="391" id="MBD-mP-Yck"/>
+                            <constraint firstItem="fxX-Ue-Cws" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NO6-cr-Elj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nN7-a4-893" secondAttribute="trailing" constant="190" id="Pqw-ie-2xK"/>
+                            <constraint firstItem="fxX-Ue-Cws" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Thp-AY-WzL"/>
+                            <constraint firstItem="fxX-Ue-Cws" firstAttribute="leading" secondItem="hHf-9e-c3c" secondAttribute="trailing" constant="116" id="UFM-YU-ORh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fxX-Ue-Cws" secondAttribute="trailing" constant="55" id="VaK-t3-CCn"/>
+                            <constraint firstItem="nN7-a4-893" firstAttribute="top" secondItem="d5A-hJ-jYJ" secondAttribute="bottom" constant="84" id="W3n-uL-JeP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fxX-Ue-Cws" secondAttribute="bottom" constant="788" id="ZG2-4D-EYh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hDX-gv-uHO" secondAttribute="trailing" constant="20" id="aIl-wA-ask"/>
+                            <constraint firstItem="nN7-a4-893" firstAttribute="top" secondItem="d5A-hJ-jYJ" secondAttribute="bottom" constant="84" id="bGa-uj-ZHR"/>
+                            <constraint firstItem="d5A-hJ-jYJ" firstAttribute="top" secondItem="hDX-gv-uHO" secondAttribute="bottom" constant="39" id="cBh-BL-N7W"/>
+                            <constraint firstItem="hDX-gv-uHO" firstAttribute="top" secondItem="hHf-9e-c3c" secondAttribute="bottom" constant="391" id="cjb-ZY-Kzc"/>
+                            <constraint firstItem="nN7-a4-893" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="175" id="eeM-69-JSO"/>
+                            <constraint firstItem="hHf-9e-c3c" firstAttribute="leading" secondItem="nMm-El-5Oj" secondAttribute="trailing" constant="109" id="fYi-Wi-8L7"/>
+                            <constraint firstItem="hDX-gv-uHO" firstAttribute="top" secondItem="fxX-Ue-Cws" secondAttribute="bottom" constant="391" id="kBx-Tc-Rqu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d5A-hJ-jYJ" secondAttribute="trailing" constant="150" id="mT8-gZ-DqV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fxX-Ue-Cws" secondAttribute="trailing" constant="20" id="qZa-t3-XNb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nN7-a4-893" secondAttribute="bottom" constant="179" id="sdf-GA-x6H"/>
+                            <constraint firstItem="hHf-9e-c3c" firstAttribute="leading" secondItem="nMm-El-5Oj" secondAttribute="trailing" constant="109" id="x6v-IS-DLh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mySaveButton" destination="fxX-Ue-Cws" id="qrR-q0-JfF"/>
+                        <outlet property="mySerialNumber" destination="hDX-gv-uHO" id="7PG-Uz-Ntg"/>
+                        <outlet property="mySlider" destination="d5A-hJ-jYJ" id="SAG-0R-CSA"/>
+                        <outlet property="mySwitch" destination="nN7-a4-893" id="hZf-Da-FtN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>
